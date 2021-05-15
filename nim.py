@@ -67,7 +67,7 @@ def game_loop(heaps, player_turn=True):
                 apply_move(i, u, heaps)
                 assert XOR(heaps)==0
 
-        # If not item left in heaps then end game
+        # If no item left in heaps then end game
         if sum(heaps) == 0: return player_turn
 
         player_turn = not player_turn
